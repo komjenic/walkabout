@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,7 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [AppComponent, SignupComponent, LoginComponent, TrainingComponent, CurrentTrainingComponent, NewTrainingComponent, PastTrainingsComponent, WelcomeComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, MaterialModule, AppRoutingModule],
+  imports: [BrowserModule, BrowserAnimationsModule, MaterialModule, AppRoutingModule, FlexLayoutModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
