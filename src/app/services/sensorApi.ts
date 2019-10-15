@@ -16,30 +16,28 @@ const getPageValues = ({ begin, end, items }) => items.slice(begin, end);
 export class SensorApi {
   constructor() {}
 
-  getSensors = async () => {
+  async getSensors() {
     return await client.get('');
-  };
+  }
 
-  postSensor = async sensor => {
+  async postSensor(sensor) {
     return await client.post('', sensor);
-  };
-  getSensor = async id => {
+  }
+  async getSensor(id) {
     return await client.get(`${id}`);
-  };
-  updateSensor = async obj => {
+  }
+  async updateSensor(obj) {
     try {
       return await client.put(`${obj.id}`, obj);
     } catch (error) {}
-  };
-  deleteSensor = async objId => {
+  }
+  async deleteSensor(objId) {
     return await client.delete(`${objId}`);
-  };
-  getSensorsByPage = (ids, page) => {
+  }
+  async getSensorsByPage(ids, page) {
     const { begin, end } = getPageSlice(PAGE_LIMIT, page);
     const activeIds = getPageValues({ begin, end, items: ids });
     const storyPromises = activeIds.map(id => this.getSensor(id));
     return Promise.all(storyPromises);
-  };
+  }
 }
-
-// this.uiService.showSnackbar('Card added successfully!', null, 3000);

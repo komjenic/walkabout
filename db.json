@@ -161,24 +161,34 @@
       "id": 18
     },
     {
-      "name": "gtrgtrg",
+      "name": "aaaaaaa",
       "image": "images/ico_temperature.svg",
       "path": "path/string",
       "unitSymbol": "°C",
       "value": true,
       "lastUpdate": 123456,
-      "type": "ACTUATOR",
+      "type": "ALARM",
       "id": 19
     },
     {
-      "name": "xxxxxxxxxx",
+      "name": "cccccccc",
+      "image": "images/ico_temperature.svg",
+      "path": "path/string",
+      "unitSymbol": "°C",
+      "value": true,
+      "lastUpdate": 123456,
+      "type": "ALARM",
+      "id": 21
+    },
+    {
+      "name": "nnnnnnnn",
       "image": "images/ico_temperature.svg",
       "path": "path/string",
       "unitSymbol": "°C",
       "value": true,
       "lastUpdate": 123456,
       "type": "FEED",
-      "id": 20
+      "id": 22
     }
   ]
 }
