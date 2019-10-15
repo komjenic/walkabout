@@ -1,0 +1,13 @@
+.welcome {
+  text-align: center;
+}
+
+.alignButtons {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+
+  & :first-child {
+    margin-right: 10px;
+  }
+}

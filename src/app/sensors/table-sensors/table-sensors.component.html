@@ -1,0 +1,51 @@
+<div fxLayoutAlign="center center">
+  <mat-form-field fxFlex="40%">
+    <input matInput type="text" (keyup)="doFilter($event.target.value)" placeholder="Filter" />
+  </mat-form-field>
+</div>
+<mat-table [dataSource]="dataSource" matSort>
+  <ng-container matColumnDef="id">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Id</mat-header-cell>
+    <mat-cell *matCellDef="let element">{{ element.id | number }}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="name">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Name</mat-header-cell>
+    <mat-cell *matCellDef="let element">{{ element.name }}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="image">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Image</mat-header-cell>
+    <mat-cell *matCellDef="let element">{{ element.image }}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="path">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Path</mat-header-cell>
+    <mat-cell *matCellDef="let element">{{ element.path }}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="unitSymbol">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>UnitSymbol</mat-header-cell>
+    <mat-cell *matCellDef="let element">{{ element.unitSymbol }}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="value">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Value</mat-header-cell>
+    <mat-cell *matCellDef="let element">{{ element.value }}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="lastUpdate">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>LastUpdate</mat-header-cell>
+    <mat-cell *matCellDef="let element">{{ element.lastUpdate | date }}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="type">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Type</mat-header-cell>
+    <mat-cell *matCellDef="let element">{{ element.type }}</mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+</mat-table>
+
+<mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]"></mat-paginator>

@@ -1,0 +1,22 @@
+<!-- <button type="button" mat-button (click)="btnClick()">Delete Sensors</button> -->
+<section class="cards" fxFlex fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="20px">
+  <form *ngFor="let data of dataSource" ng- (ngModel)="(dataSource)" fxFlex="400px" fxFlex.xs="100%" class="form">
+    <mat-card class="card">
+      <mat-card-title fxLayoutAlign="start">{{ data.name }}</mat-card-title>
+      <mat-card-subtitle fxLayoutAlign="start">{{ data.path }}</mat-card-subtitle>
+      <mat-card-actions fxLayoutAlign="center">
+        <button type="button" mat-button (click)="onEdit(data.id)">EDIT</button>
+        <button type="button" mat-button (click)="onDelete(data.id)">DELETE</button>
+      </mat-card-actions>
+      <mat-card-content fxLayout="column" fxLayoutAlign="end">
+        <div fxFlex fxLayout="row" fxLayoutAlign="space-between center" class="svg-green">
+          <mat-icon svgIcon="{{ data.image }}"></mat-icon>
+          <mat-card-title>{{ data.value }}</mat-card-title>
+        </div>
+        <div>
+          <mat-card-subtitle fxFlex fxLayout="row" fxLayoutAlign="end" class="svg-green">{{ data.unitSymbol }}</mat-card-subtitle>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </form>
+</section>
