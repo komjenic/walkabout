@@ -45,9 +45,9 @@ export class CardSensorsComponent implements OnInit {
         try {
           await this.sensorApi.deleteSensor(sensorId);
           await this.ngOnInit();
-          await this.uiService.showSnackbar('Card deleted successfully !!!', null, 3000);
+          await this.uiService.showSnackbar('Card deleted successfully !!!', null, 3000, 'red-snackbar');
         } catch (error) {
-          this.uiService.showSnackbar(error, null, 3000);
+          this.uiService.showSnackbar(error, null, 3000, 'red-snackbar');
         }
       }
     });

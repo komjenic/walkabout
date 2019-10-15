@@ -35,10 +35,10 @@ export class SensorsComponent implements OnInit, OnDestroy {
       });
       this.uiService.loadingStateChanged.next(false);
       await this.router.navigate(['/']);
-      this.uiService.showSnackbar('Card added successfully !!!', null, 3000);
+      this.uiService.showSnackbar('Card added successfully !!!', null, 3000, 'green-snackbar');
     } catch (error) {
       this.uiService.loadingStateChanged.next(false);
-      this.uiService.showSnackbar(error, null, 3000);
+      this.uiService.showSnackbar(error, null, 3000, 'red-snackbar');
     }
   }
 

@@ -9,3 +9,15 @@ body {
   margin: 0;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
+
+.red-snackbar {
+  background-color: crimson;
+}
+
+.orange-snackbar {
+  background-color: orangered;
+}
+
+.green-snackbar {
+  background-color: darkcyan;
+}

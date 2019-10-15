@@ -27,9 +27,9 @@ export class CardEditComponent implements OnInit {
         type: form.value.type
       });
       await this.router.navigate(['/']);
-      this.uiService.showSnackbar('Card edit successfully !!!', null, 3000);
+      this.uiService.showSnackbar('Card edit successfully !!!', null, 3000, 'orange-snackbar');
     } catch (error) {
-      this.uiService.showSnackbar(error, null, 3000);
+      this.uiService.showSnackbar(error, null, 3000, 'red-snackbar');
     }
   }
 }
