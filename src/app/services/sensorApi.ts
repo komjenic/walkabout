@@ -17,22 +17,26 @@ export class SensorApi {
   constructor() {}
 
   async getSensors() {
-    return await client.get('');
+    try {
+      return await client.get('/sensors');
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   async postSensor(sensor) {
-    return await client.post('', sensor);
+    return await client.post('/sensors', sensor);
   }
   async getSensor(id) {
-    return await client.get(`${id}`);
+    return await client.get(`/sensors/${id}`);
   }
   async updateSensor(obj) {
     try {
-      return await client.put(`${obj.id}`, obj);
+      return await client.put(`/sensors/${obj.id}`, obj);
     } catch (error) {}
   }
   async deleteSensor(objId) {
-    return await client.delete(`${objId}`);
+    return await client.delete(`/sensors/${objId}`);
   }
   async getSensorsByPage(ids, page) {
     const { begin, end } = getPageSlice(PAGE_LIMIT, page);

@@ -1,16 +1,6 @@
 {
   "sensors": [
     {
-      "id": 0,
-      "name": "Temperature",
-      "image": "images/ico_temperature.svg",
-      "path": "DemoDevice/Temperature",
-      "unitSymbol": "℃",
-      "value": "31.8",
-      "lastUpdate": 1530045809121,
-      "type": "ACTUATOR"
-    },
-    {
       "id": 1,
       "name": "Humidity",
       "image": "images/ico_humidity.svg",
@@ -181,14 +171,24 @@
       "id": 21
     },
     {
-      "name": "nnnnnnnn",
+      "name": "kkkkkkk",
       "image": "images/ico_temperature.svg",
       "path": "path/string",
       "unitSymbol": "°C",
       "value": true,
       "lastUpdate": 123456,
-      "type": "FEED",
+      "type": "ACTUATOR",
       "id": 22
+    },
+    {
+      "name": "ggggggg",
+      "image": "images/ico_temperature.svg",
+      "path": "path/string",
+      "unitSymbol": "°C",
+      "value": true,
+      "lastUpdate": 123456,
+      "type": "ACTUATOR",
+      "id": 23
     }
   ]
 }

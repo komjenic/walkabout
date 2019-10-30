@@ -20,18 +20,8 @@ class ApiService {
       headers: HEADERS
     });
 
-    client.interceptors.response.use(this.handleSuccess, this.handleError);
     this.client = client;
   }
-
-  handleSuccess(response) {
-    return response;
-  }
-
-  handleError(error) {
-    return Promise.reject(error);
-  }
-
   get(path) {
     return this.client.get(path).then(response => {
       return response.data;

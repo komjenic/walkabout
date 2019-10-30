@@ -17,7 +17,11 @@ export class TableSensorsComponent implements OnInit, AfterViewInit {
   constructor(private sensorApi: SensorApi) {}
 
   async ngOnInit() {
-    this.dataSource.data = await this.sensorApi.getSensors();
+    try {
+      this.dataSource.data = await this.sensorApi.getSensors();
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   ngAfterViewInit() {

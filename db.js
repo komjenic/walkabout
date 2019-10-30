@@ -1,0 +1,196 @@
+const db = {
+  sensors: [
+    {
+      id: 1,
+      name: 'Humidity',
+      image: 'images/ico_humidity.svg',
+      path: 'DemoDevice/Humidity',
+      unitSymbol: '%',
+      value: '43.23',
+      lastUpdate: 1507211004000,
+      type: 'FEED'
+    },
+    {
+      id: 2,
+      name: 'Pressure',
+      image: 'images/ico_pressure.svg',
+      path: 'DemoDevice/Pressure',
+      unitSymbol: 'mb',
+      value: '1003.4',
+      lastUpdate: 1507211004000,
+      type: 'FEED'
+    },
+    {
+      id: 4,
+      name: 'Light',
+      image: 'images/ico_switcher.svg',
+      path: 'DemoDevice/Light',
+      unitSymbol: null,
+      value: false,
+      lastUpdate: 1505819296000,
+      type: 'ACTUATOR'
+    },
+    {
+      id: 5,
+      name: 'Count',
+      image: 'images/ico_slider.svg',
+      path: 'DemoDevice/Count',
+      unitSymbol: 'count',
+      value: '+76',
+      lastUpdate: 1505819296000,
+      type: 'ACTUATOR'
+    },
+    {
+      id: 6,
+      name: 'Highway board',
+      image: 'images/ico_string.svg',
+      path: 'DemoDevice/Light',
+      unitSymbol: null,
+      value: 'Drive carefully someone loves you',
+      lastUpdate: 1505819296000,
+      type: 'ACTUATOR'
+    },
+    {
+      id: 7,
+      name: 'High Humidity',
+      image: 'images/ico_alarm.svg',
+      path: 'DemoDevice/High Humidity',
+      unitSymbol: null,
+      value: true,
+      lastUpdate: 1507211004000,
+      type: 'ALARM'
+    },
+    {
+      name: 'vdfvdfv',
+      image: 'images/ico_temperature.svg',
+      path: 'path/string',
+      unitSymbol: '°C',
+      value: true,
+      lastUpdate: 123456,
+      type: 'ACTUATOR',
+      id: 8
+    },
+    {
+      name: 'bggggggg',
+      image: 'images/ico_temperature.svg',
+      path: 'path/string',
+      unitSymbol: '°C',
+      value: true,
+      lastUpdate: 123456,
+      type: 'ACTUATOR',
+      id: 9
+    },
+    {
+      name: 'vdbvfx vfffffffff',
+      image: 'images/ico_temperature.svg',
+      path: 'path/string',
+      unitSymbol: '°C',
+      value: true,
+      lastUpdate: 123456,
+      type: 'ACTUATOR',
+      id: 10
+    },
+    {
+      name: 'cdcsdcds',
+      image: 'images/ico_temperature.svg',
+      path: 'path/string',
+      unitSymbol: '°C',
+      value: true,
+      lastUpdate: 123456,
+      type: 'ACTUATOR',
+      id: 12
+    },
+    {
+      name: 'bvhghh',
+      image: 'images/ico_temperature.svg',
+      path: 'path/string',
+      unitSymbol: '°C',
+      value: true,
+      lastUpdate: 123456,
+      type: 'ACTUATOR',
+      id: 13
+    },
+    {
+      name: 'dbbfgbgfgb',
+      image: 'images/ico_temperature.svg',
+      path: 'path/string',
+      unitSymbol: '°C',
+      value: true,
+      lastUpdate: 123456,
+      type: 'ACTUATOR',
+      id: 14
+    },
+    {
+      name: 'hhhhhhhhh',
+      image: 'images/ico_temperature.svg',
+      path: 'path/string',
+      unitSymbol: '°C',
+      value: true,
+      lastUpdate: 123456,
+      type: 'ACTUATOR',
+      id: 16
+    },
+    {
+      name: 'fferferf',
+      image: 'images/ico_temperature.svg',
+      path: 'path/string',
+      unitSymbol: '°C',
+      value: true,
+      lastUpdate: 123456,
+      type: 'ACTUATOR',
+      id: 17
+    },
+    {
+      name: 'vdfvdfg',
+      image: 'images/ico_temperature.svg',
+      path: 'path/string',
+      unitSymbol: '°C',
+      value: true,
+      lastUpdate: 123456,
+      type: 'ACTUATOR',
+      id: 18
+    },
+    {
+      name: 'aaaaaaa',
+      image: 'images/ico_temperature.svg',
+      path: 'path/string',
+      unitSymbol: '°C',
+      value: true,
+      lastUpdate: 123456,
+      type: 'ALARM',
+      id: 19
+    },
+    {
+      name: 'cccccccc',
+      image: 'images/ico_temperature.svg',
+      path: 'path/string',
+      unitSymbol: '°C',
+      value: true,
+      lastUpdate: 123456,
+      type: 'ALARM',
+      id: 21
+    },
+    {
+      name: 'kkkkkkk',
+      image: 'images/ico_temperature.svg',
+      path: 'path/string',
+      unitSymbol: '°C',
+      value: true,
+      lastUpdate: 123456,
+      type: 'ACTUATOR',
+      id: 22
+    },
+    {
+      name: 'ggggggg',
+      image: 'images/ico_temperature.svg',
+      path: 'path/string',
+      unitSymbol: '°C',
+      value: true,
+      lastUpdate: 123456,
+      type: 'ACTUATOR',
+      id: 23
+    }
+  ]
+};
+
+module.exports = db;
