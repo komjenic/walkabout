@@ -1,8 +1,9 @@
 import axios from 'axios';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 // Default API will be your root
-const API_ROOT = 'http://localhost:3000/sensors';
+const API_ROOT = environment.API_URL;
 const TIMEOUT = 20000;
 const HEADERS = {
   'Content-Type': 'application/json',
